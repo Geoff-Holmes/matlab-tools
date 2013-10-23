@@ -1,5 +1,7 @@
 function handle = grhCtext(z, string)
 
+% handle = grhCtext(z, string)
+
 % place text at location of complex numbers in z
 
 for i = 1:length(z)

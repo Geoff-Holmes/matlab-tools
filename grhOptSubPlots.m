@@ -1,18 +1,20 @@
-function [s, t, waste] = grhOptSubPlots(N)
+function [rows, cols, waste] = grhOptSubPlots(N)
 
+% [rows, cols, waste] = grhOptSubPlots(N)
+%
 % optimise subplot rows and columns to achieve N subplots with min waste
 
-s = floor(sqrt(N));
+rows = floor(sqrt(N));
 
-if ~mod(N, s) & N/s-s<3
-    t = N/s;
+if ~mod(N, rows) & N/rows-rows<3
+    cols = N/rows;
 else
-    s = s-1;
-    if ~mod(N, s) & N/s-s<3
-        t = N/s;
+    rows = rows-1;
+    if ~mod(N, rows) & N/rows-rows<3
+        cols = N/rows;
     else
-        [s,t] = grhOptSubPlots(N+1);
+        [rows, cols] = grhOptSubPlots(N+1);
     end
 end
 
-waste = s*t-N;
+waste = rows*cols-N;

@@ -3,6 +3,14 @@ function [cnt, edgs] = grhEqCountHist(X, bns, plt)
 % [cnt, edgs] = grhEqCountHist(X, bns, plt)
 %
 % create a histogram which has equal count in each bin
+% INPUTS:
+% X is the data to be represented
+% bns is the nunber of bins to use
+% if plt the histogram is plotted
+% OUTPUTS:
+% cnt is the number of data in each bin (equal +/- 1)
+% edgs is a vector of the bin edges
+
 
 if nargin < 2
     bns = 10;

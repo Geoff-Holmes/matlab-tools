@@ -1,4 +1,4 @@
-function p = grhCline(x,y)
+function handle = grhCline(x,y)
 
 % p = grhCline(x,y)
 
@@ -11,4 +11,4 @@ assert(numel(x) == numel(y))
 x = x(1:numel(x));
 y = y(1:numel(y));
 
-p = line(real([x; y]), imag([x; y]));
+handle = line(real([x; y]), imag([x; y]));
