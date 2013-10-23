@@ -1,5 +1,7 @@
 function b = grhWeightedHist(data, weights, bars)
-    
+
+    % b = grhWeightedHist(data, weights, bars)
+    %
     % produce a weighted histogram of samples in 'data'
     % which are weighted according to 'weights'
     % 'bars' is the number of bars
