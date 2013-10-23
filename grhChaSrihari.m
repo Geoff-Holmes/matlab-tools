@@ -1,6 +1,6 @@
 function D = grhChaSrihari(A, B, cntrSpacing)
 
-% D = grhHistDist(A, B, cntrs)
+% D = grhHistDist(A, B, cntrSpacing)
 %
 % compute distance between histograms
 % using algorithm 1 from Cha & Srihari
